@@ -27,7 +27,7 @@ jobs:
             cd function
             zip -r ../${{ github.sha }}.zip .
       - name: upload artifact
-        uses: actions/upload-artifact@v3m
+        uses: actions/upload-artifact@v3
         with:
           name: my-artifact
           path: ${{ github.sha }}.zip      
